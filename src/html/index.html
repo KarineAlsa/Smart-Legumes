@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+
+</head>
+<header>
+    <div class="bg-gray-800">
+            <div class="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:flex lg:justify-between lg:px-8">
+                <div class="max-w-xl">
+                    <h2 class="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">Smart Legumes</h2>
+                    <p class="mt-5 text-xl text-gray-400">Para empezar toma una foto del grano y Smart Legumes te dirá de cuál se trata</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <main class="mx-auto mt-8 max-w-2xl px-4 pb-16 sm:px-6 sm:pb-24 lg:max-w-7xl lg:px-8">
+        <div class="lg:grid lg:auto-rows-min lg:grid-cols-12 lg:gap-x-8">
+            <div class="lg:col-span-5 lg:col-start-8">
+                <div class="flex justify-between">
+                    <h1 class="text-xl font-medium text-gray-900">Resultado</h1>
+                    <p id="result" class="text-xl font-medium text-gray-900"></p>
+                </div>
+            </div>
+  
+        <!-- Image gallery -->
+            <div class="mt-8 lg:col-span-7 lg:col-start-1 lg:row-span-3 lg:row-start-1 lg:mt-0">
+                <h2 class="sr-only">Images</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-3 lg:gap-8">
+                    
+                    <video id="video" autoplay class="lg:col-span-2 lg:row-span-2 rounded-lg"></video>
+                    <canvas id="canvas" width="640" height="480" style="display:none"></canvas>
+                    <br>
+                    
+                    <br>
+                </div>
+            </div>
+            <div class="mt-8 lg:col-span-5">
+                
+                <button id="capture" class="mt-8 flex w-full items-center justify-center rounded-md border border-transparent bg-gray-600 py-3 px-8 text-base font-medium text-white hover:bg-gray-900 focus:outline-none focus:ring-2 focus:bg-gray-500 focus:ring-offset-2">Detectar</button>
+                <button id="upload" style="display:none" class="mt-8 flex w-full items-center justify-center rounded-md border border-transparent bg-gray-800 py-3 px-8 text-base font-medium text-white hover:bg-gray-900 focus:outline-none focus:ring-2 focus:bg-gray-500 focus:ring-offset-2">Intentar de nuevo</button>
+                
+
+            </div>
+        </div>
+    </main>
+
+  </div>
+
+    <script src="../js/index.js"></script>
+  
+</body>
+
+</html>
